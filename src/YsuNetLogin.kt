@@ -2,9 +2,6 @@ import com.alibaba.fastjson.JSONObject
 import org.jsoup.Connection
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
-import java.io.UnsupportedEncodingException
-import java.lang.Exception
-import java.net.URLEncoder
 
 class YsuNetLogin {
 
@@ -31,61 +28,69 @@ class YsuNetLogin {
     private var connectInfo: String = ""
 
     fun getAuthStatus(): Boolean {
-        try {
+        return try {
             val doc: Document = Jsoup.connect("http://auth.ysu.edu.cn").userAgent(userAgent).get()
             //    println(doc.baseUri())
             //    println(doc.location())
             this.isAuth = doc.baseUri().toString().indexOf("success.jsp") > -1
             this.alreadyCheckedAuthStatus = true
-            return this.isAuth
+            this.isAuth
         } catch (e: Exception) {
-            return false
+            false
         }
     }
 
     fun login(user: String, pwd: String, type: Int, code: String?): Pair<Boolean, String> {
+        try {
+            val doc: Document = Jsoup.connect("http://auth.ysu.edu.cn").userAgent(userAgent).get()
+            this.isAuth = doc.baseUri().toString().indexOf("success.jsp") > -1
+            this.alreadyCheckedAuthStatus = true
 
-        val doc: Document = Jsoup.connect("http://auth.ysu.edu.cn").userAgent(userAgent).get()
-        this.isAuth = doc.baseUri().toString().indexOf("success.jsp") > -1
-        this.alreadyCheckedAuthStatus = true
+            if (!(this.isAuth)) {
+                if (user.isEmpty() || pwd.isEmpty()) {
+                    return Pair(false, "用户名或密码为空")
+                }
 
-        if (!(this.isAuth)) {
-            if (user.isEmpty() || pwd.isEmpty()) {
-                return Pair(false, "用户名或密码为空")
-            }
+                //正则匹配queryString
+                val queryString = Regex("""href='.*?\?(.*?)'""")
+                        .findAll(doc.toString()).toList().flatMap(MatchResult::groupValues)
 
-            //正则匹配queryString
-            val queryString = Regex("""href='.*?\?(.*?)'""")
-                    .findAll(doc.toString()).toList().flatMap(MatchResult::groupValues)
+                val connect: Connection = Jsoup.connect(this.url + "login").userAgent(userAgent)
 
-            val connect: Connection = Jsoup.connect(this.url + "login").userAgent(userAgent)
+                connect.data("userId", user)
+                connect.data("password", pwd)
+                connect.data("service", serviceCode[type])
+                connect.data("operatorPwd", "")
+                connect.data("operatorUserId", "")
+                connect.data("validcode", code)
+                connect.data("passwordEncrypt", "False")
+                connect.data("queryString", queryString[1])
 
-            connect.data("userId", user)
-            connect.data("password", pwd)
-            connect.data("service", serviceCode[type])
-            connect.data("operatorPwd", "")
-            connect.data("operatorUserId", "")
-            connect.data("validcode", code)
-            connect.data("passwordEncrypt", "False")
-            connect.data("queryString", queryString[1])
+                val document: Document = connect.post()
 
-            val document: Document = connect.post()
+                val outJson = JSONObject.parseObject(getJson(document.body().toString()))
+                this.userIndex = outJson.getString("userIndex")
+                this.connectInfo = outJson.getString("message")
+                val result = outJson.getString("result")
 
-            val outJson = JSONObject.parseObject(getJson(document.body().toString()))
-            this.userIndex = outJson.getString("userIndex")
-            this.connectInfo = outJson.getString("message")
-            val result = outJson.getString("result")
+                return if (result == "success") {
+                    Pair(true, "认证成功")
+                } else {
+                    Pair(false, this.connectInfo)
+                }
 
-            return if (result == "success") {
-                Pair(true, "认证成功")
             } else {
-                Pair(false, this.connectInfo)
+                return Pair(true, "已经在线")
             }
 
-        } else {
-            return Pair(true, "已经在线")
-        }
+        } catch (e: Exception) {
+            var msg = "Exception"
+            if (e.message != null) {
+                msg = e.message.toString()
+            }
 
+            return Pair(false, msg)
+        }
     }
 
     class UserInfo constructor(json: String) {
@@ -192,17 +197,35 @@ class YsuNetLogin {
     }
 
     fun logout(): Pair<Boolean, String> {
-        val doc: Document = Jsoup.connect(this.url + "logout").userAgent(userAgent).get()
+        return try {
+            val doc: Document = Jsoup.connect(this.url + "logout").userAgent(userAgent).get()
 
-        val outJson = JSONObject.parseObject(getJson(doc.toString()))
+            val outJson = JSONObject.parseObject(getJson(doc.toString()))
 
-        this.connectInfo = outJson.getString("message")
-        val result = outJson.getString("result")
+            this.connectInfo = outJson.getString("message")
+            val result = outJson.getString("result")
 
-        return if (result == "success") {
-            Pair(true, "下线成功")
-        } else {
-            Pair(false, this.connectInfo)
+            if (result == "success") {
+                Pair(true, "下线成功")
+            } else {
+                Pair(false, this.connectInfo)
+            }
+        } catch (e: Exception) {
+            var msg = "Exception"
+            if (e.message != null) {
+                msg = e.message.toString()
+            }
+
+            Pair(false, msg)
+        }
+    }
+
+    fun isCampusNetwork(timeout: Int = 100): Boolean {
+        return try {
+            Jsoup.connect("http://auth.ysu.edu.cn").userAgent(userAgent).timeout(timeout).get()
+            true
+        } catch (e: Exception) {
+            false
         }
     }
 

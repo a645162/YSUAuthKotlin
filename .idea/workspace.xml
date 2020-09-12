@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed19a5d7-f147-4823-9fb7-3e044d362495" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/YsuAuthKotlin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/YsuNetLogin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/YsuNetLogin.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,26 +51,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="com.alibabacloud.intellij.config.AccountConfigurable" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="YsuAuthKotlin" />
       <option name="VM_PARAMETERS" />
@@ -100,8 +86,17 @@
       <option name="presentableId" value="Default" />
       <updated>1599480370172</updated>
       <workItem from="1599480371362" duration="651000" />
-      <workItem from="1599481058893" duration="442000" />
+      <workItem from="1599481058893" duration="1669000" />
+      <workItem from="1599570717182" duration="2110000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1599481750451</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599481750451</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,20 +104,46 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="328" y="101" key="#Project_Structure" timestamp="1599481548164">
+    <state x="328" y="101" key="#Project_Structure" timestamp="1599481599537">
       <screen x="0" y="23" width="1680" height="993" />
     </state>
-    <state x="328" y="101" key="#Project_Structure/0.23.1680.993@0.23.1680.993" timestamp="1599481548164" />
+    <state x="328" y="101" key="#Project_Structure/0.23.1680.993@0.23.1680.993" timestamp="1599481599537" />
     <state x="304" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599480993145">
       <screen x="0" y="23" width="1680" height="993" />
     </state>
     <state x="304" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.993@0.23.1680.993" timestamp="1599480993145" />
-    <state x="428" y="269" key="IDE.errors.dialog" timestamp="1599481082116">
+    <state x="330" y="90" key="CommitChangelistDialog2" timestamp="1599481750270">
       <screen x="0" y="23" width="1680" height="993" />
     </state>
-    <state x="428" y="269" key="IDE.errors.dialog/0.23.1680.993@0.23.1680.993" timestamp="1599481082116" />
+    <state x="330" y="90" key="CommitChangelistDialog2/0.23.1680.993@0.23.1680.993" timestamp="1599481750270" />
+    <state width="1167" height="269" key="GridCell.Tab.0.bottom" timestamp="1599574297031">
+      <screen x="0" y="23" width="1680" height="993" />
+    </state>
+    <state width="1167" height="269" key="GridCell.Tab.0.bottom/0.23.1680.993@0.23.1680.993" timestamp="1599574297031" />
+    <state width="1167" height="269" key="GridCell.Tab.0.center" timestamp="1599574297030">
+      <screen x="0" y="23" width="1680" height="993" />
+    </state>
+    <state width="1167" height="269" key="GridCell.Tab.0.center/0.23.1680.993@0.23.1680.993" timestamp="1599574297030" />
+    <state width="1167" height="269" key="GridCell.Tab.0.left" timestamp="1599574297030">
+      <screen x="0" y="23" width="1680" height="993" />
+    </state>
+    <state width="1167" height="269" key="GridCell.Tab.0.left/0.23.1680.993@0.23.1680.993" timestamp="1599574297030" />
+    <state width="1167" height="269" key="GridCell.Tab.0.right" timestamp="1599574297030">
+      <screen x="0" y="23" width="1680" height="993" />
+    </state>
+    <state width="1167" height="269" key="GridCell.Tab.0.right/0.23.1680.993@0.23.1680.993" timestamp="1599574297030" />
+    <state x="428" y="269" key="IDE.errors.dialog" timestamp="1599481762319">
+      <screen x="0" y="23" width="1680" height="993" />
+    </state>
+    <state x="428" y="269" key="IDE.errors.dialog/0.23.1680.993@0.23.1680.993" timestamp="1599481762319" />
+    <state x="440" y="259" key="Vcs.Push.Dialog.v2" timestamp="1599481753670">
+      <screen x="0" y="23" width="1680" height="993" />
+    </state>
+    <state x="440" y="259" key="Vcs.Push.Dialog.v2/0.23.1680.993@0.23.1680.993" timestamp="1599481753670" />
     <state x="537" y="419" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1599481513459">
       <screen x="0" y="23" width="1680" height="993" />
     </state>
