@@ -3,7 +3,11 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/jsoup-1.13.1.jar!/" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/jsoup-1.13.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/jsoup-1.13.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

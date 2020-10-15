@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed19a5d7-f147-4823-9fb7-3e044d362495" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/fastjson_1_2_74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastjson-1.2.74-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastjson-1.2.74-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastjson-1.2.74.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsoup-1.13.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsoup-1.13.1-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/YsuAuthKotlin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/YsuAuthKotlin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fastjson_1_2_73.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/YsuNetLogin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/YsuNetLogin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastjson-1.2.73.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsoup-1.13.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jsoup-1.13.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/YsuAuthKotlin/YsuNetLogin$UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YsuAuthKotlin/YsuNetLogin$UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/YsuAuthKotlin/YsuNetLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YsuAuthKotlin/YsuNetLogin.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +55,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/src/Main.kt" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -51,10 +63,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.alibabacloud.intellij.config.AccountConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
@@ -88,6 +100,11 @@
       <workItem from="1599480371362" duration="651000" />
       <workItem from="1599481058893" duration="1669000" />
       <workItem from="1599570717182" duration="2110000" />
+      <workItem from="1600861575035" duration="582000" />
+      <workItem from="1602244375805" duration="1428000" />
+      <workItem from="1602380902996" duration="14000" />
+      <workItem from="1602385285039" duration="656000" />
+      <workItem from="1602386321813" duration="871000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1599481750451</created>
@@ -108,9 +125,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="328" y="101" key="#Project_Structure" timestamp="1599481599537">
-      <screen x="0" y="23" width="1680" height="993" />
+    <state x="328" y="101" key="#Project_Structure" timestamp="1602385795252">
+      <screen x="0" y="23" width="1680" height="992" />
     </state>
+    <state x="328" y="101" key="#Project_Structure/0.23.1680.992@0.23.1680.992" timestamp="1602385795252" />
     <state x="328" y="101" key="#Project_Structure/0.23.1680.993@0.23.1680.993" timestamp="1599481599537" />
     <state x="304" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599480993145">
       <screen x="0" y="23" width="1680" height="993" />
@@ -120,33 +138,42 @@
       <screen x="0" y="23" width="1680" height="993" />
     </state>
     <state x="330" y="90" key="CommitChangelistDialog2/0.23.1680.993@0.23.1680.993" timestamp="1599481750270" />
-    <state width="1167" height="269" key="GridCell.Tab.0.bottom" timestamp="1599574297031">
-      <screen x="0" y="23" width="1680" height="993" />
+    <state width="1167" height="268" key="GridCell.Tab.0.bottom" timestamp="1602385956907">
+      <screen x="0" y="23" width="1680" height="992" />
     </state>
+    <state width="1167" height="268" key="GridCell.Tab.0.bottom/0.23.1680.992@0.23.1680.992" timestamp="1602385956907" />
     <state width="1167" height="269" key="GridCell.Tab.0.bottom/0.23.1680.993@0.23.1680.993" timestamp="1599574297031" />
-    <state width="1167" height="269" key="GridCell.Tab.0.center" timestamp="1599574297030">
-      <screen x="0" y="23" width="1680" height="993" />
+    <state width="1167" height="268" key="GridCell.Tab.0.center" timestamp="1602385956906">
+      <screen x="0" y="23" width="1680" height="992" />
     </state>
+    <state width="1167" height="268" key="GridCell.Tab.0.center/0.23.1680.992@0.23.1680.992" timestamp="1602385956906" />
     <state width="1167" height="269" key="GridCell.Tab.0.center/0.23.1680.993@0.23.1680.993" timestamp="1599574297030" />
-    <state width="1167" height="269" key="GridCell.Tab.0.left" timestamp="1599574297030">
-      <screen x="0" y="23" width="1680" height="993" />
+    <state width="1167" height="268" key="GridCell.Tab.0.left" timestamp="1602385956906">
+      <screen x="0" y="23" width="1680" height="992" />
     </state>
+    <state width="1167" height="268" key="GridCell.Tab.0.left/0.23.1680.992@0.23.1680.992" timestamp="1602385956906" />
     <state width="1167" height="269" key="GridCell.Tab.0.left/0.23.1680.993@0.23.1680.993" timestamp="1599574297030" />
-    <state width="1167" height="269" key="GridCell.Tab.0.right" timestamp="1599574297030">
-      <screen x="0" y="23" width="1680" height="993" />
+    <state width="1167" height="268" key="GridCell.Tab.0.right" timestamp="1602385956907">
+      <screen x="0" y="23" width="1680" height="992" />
     </state>
+    <state width="1167" height="268" key="GridCell.Tab.0.right/0.23.1680.992@0.23.1680.992" timestamp="1602385956907" />
     <state width="1167" height="269" key="GridCell.Tab.0.right/0.23.1680.993@0.23.1680.993" timestamp="1599574297030" />
     <state x="428" y="269" key="IDE.errors.dialog" timestamp="1599481762319">
       <screen x="0" y="23" width="1680" height="993" />
     </state>
     <state x="428" y="269" key="IDE.errors.dialog/0.23.1680.993@0.23.1680.993" timestamp="1599481762319" />
+    <state x="106" y="157" key="SettingsEditor" timestamp="1602252994612">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="106" y="157" key="SettingsEditor/0.23.1680.991@0.23.1680.991" timestamp="1602252994612" />
     <state x="440" y="259" key="Vcs.Push.Dialog.v2" timestamp="1599481753670">
       <screen x="0" y="23" width="1680" height="993" />
     </state>
     <state x="440" y="259" key="Vcs.Push.Dialog.v2/0.23.1680.993@0.23.1680.993" timestamp="1599481753670" />
-    <state x="537" y="419" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1599481513459">
-      <screen x="0" y="23" width="1680" height="993" />
+    <state x="537" y="419" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1602385537560">
+      <screen x="0" y="23" width="1680" height="992" />
     </state>
+    <state x="537" y="419" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1680.992@0.23.1680.992" timestamp="1602385537560" />
     <state x="537" y="419" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1680.993@0.23.1680.993" timestamp="1599481513459" />
   </component>
 </project>
