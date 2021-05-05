@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed19a5d7-f147-4823-9fb7-3e044d362495" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/fastjson_1_2_74.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastjson-1.2.74-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastjson-1.2.74-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastjson-1.2.74.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsoup-1.13.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsoup-1.13.1-sources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/YsuAuthKotlin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/YsuAuthKotlin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/fastjson_1_2_73.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastjson-1.2.73.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsoup-1.13.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jsoup-1.13.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/YsuAuthKotlin/YsuNetLogin$UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YsuAuthKotlin/YsuNetLogin$UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/YsuAuthKotlin/YsuNetLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YsuAuthKotlin/YsuNetLogin.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +92,11 @@
       <workItem from="1602380902996" duration="14000" />
       <workItem from="1602385285039" duration="656000" />
       <workItem from="1602386321813" duration="871000" />
+      <workItem from="1603460111644" duration="1381000" />
+      <workItem from="1603462800117" duration="37000" />
+      <workItem from="1603887686623" duration="2291000" />
+      <workItem from="1604155135785" duration="549000" />
+      <workItem from="1604406823636" duration="556000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1599481750451</created>

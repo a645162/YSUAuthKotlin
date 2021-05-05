@@ -1,4 +1,7 @@
 # 燕山大学校园网认证脚本(Kotlin)
+## 停止更新
+
+以后在 [https://gitee.com/a645162/ysuauth](https://gitee.com/a645162/ysuauth)更新
 
 ## 前言
 
